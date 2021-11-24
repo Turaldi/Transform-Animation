@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="animation-css">CSS</div>
+    </div>
+    
+    
+</body>
+
+--style.css--
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .animation-css{
+  margin: 25px;
+  width: 68px;
+  height: 46px;
+  border-radius: 6px;
+  background-color: rgb(151, 218, 151);
+  text-align: center;
+  color: #ffffff;
+  font-weight:bolder;
+  font-size:22px;
+  padding: 10px;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+@keyframes spin {
+  0%{ transform: rotate(0deg);
+       left:0px;}
+  25%{
+      transform: rotate(20deg);
+      left: 0px;
+  }
+  50%{
+      transform:rotate(0deg);
+      left: 300px;
+  }
+  60%{
+      transform: rotate(0deg);
+      left: 300px;
+  }
+  70%{
+      transform: rotate(0deg);
+      left: 300px;
+      background-color:lightsalmon;
+  }
+  100%{
+      transform: rotate(-360deg);
+      left:0px;
+  }
+
+}
+</html>
